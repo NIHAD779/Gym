@@ -1,8 +1,3 @@
-import React from 'react'
-import {Link,NavLink} from 'react-router-dom'
-import Logo from '../Assets/images/logo.png'
-import {links} from '../Assets/data'
-import { Burger, Drawer } from "@mantine/core";
 const elements = () => {
     <div className='h-full w-full flex justify-between items-center relative px-20'>
             <Link to = '/'> <img src={Logo} className='w-[7rem]' alt="NavLogo" /> </Link>
