@@ -4,7 +4,6 @@ import Programs from '../Components/Programs'
 import Values from '../Components/Values'
 import FAQ from '../Components/FAQ'
 import Testimonials from '../Components/Testimonials'
-import Footer from '../Components/Footer'
 const Home = () => {
   return (
     <>
@@ -13,7 +12,7 @@ const Home = () => {
     <Values/>
     <FAQ/>
     <Testimonials/>
-    <Footer/>
+    
     </>
   )
 }

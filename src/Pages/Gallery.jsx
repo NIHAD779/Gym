@@ -4,8 +4,8 @@ import headerimg from '../Assets/images/header_bg_3.jpg'
 const Gallery = () => {
   const images = []
 
-  for (let i = 1; i <= 15; i++){
-    images.push(<img src='../Assets/images/gallery$(i).jpg' alt="gallery"></img>)
+  for (let i = 1; i < 15; i++){
+    images.push(require(`../Assets/images/gallery${i}.jpg`))
   }
   return (
     <>
@@ -13,11 +13,11 @@ const Gallery = () => {
       akjbfauibvaioubviubevijjasnviab
     </Header>
     <section>
-      <div>
+      <div className='grid grid-cols-3 gap-10 m-5'>
         {images.map((image) => {
           return(
             <article>
-              <img src={image} alt="" />
+              <img src={image} alt=""  className='rounded-xl '/>
             </article>
           )
         })

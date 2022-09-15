@@ -9,7 +9,7 @@ const Trainer = ({image,name,job,socials}) => {
         </div>
         <h1>{name}</h1>
         <p>{job}</p>
-        <div>
+        <div className='flex gap-4 mt-2'>
             {
                 socials.map(({icon,link},index) =>{
                 return (

@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {AiOutlineMinus,AiOutlinePlus } from 'react-icons/ai'
 
 const Faq = ({Q,ans}) => {
-    const [show,setShow] = useState(true)
+    const [show,setShow] = useState(false)
   return (
     <article onClick={() => setShow(prev => !prev)} className='bg-blue-500 rounded-tl-[3rem] rounded-br-[3rem] text-center px-[3rem] py-[2rem'>
         <div >

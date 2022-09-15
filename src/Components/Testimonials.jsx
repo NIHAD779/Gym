@@ -19,14 +19,17 @@ const Testimonials = () => {
             setindex(0)}
     }
   return (
-    <section>
+    <section className='flex flex-col items-center justify-center m-4'>
         <Sectionhead title ="Testimonials"/>
+        <div className='w-[50vw]'>
+        
         <Card>
             <img src={avatar} alt="name" />
             <p>{quote}</p>
             <h5>{name}</h5>
             <small>{job}</small>
         </Card>
+        </div>
         <div>
             <button onClick={prevs} ><IoIosArrowDropleftCircle/></button>
             <button onClick={next} ><IoIosArrowDroprightCircle/></button>

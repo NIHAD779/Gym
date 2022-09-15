@@ -8,7 +8,7 @@ const FAQ = () => {
     <section>
         <div>
             <Sectionhead title = "FAQs"></Sectionhead>
-            <div className="faq_wrapp">
+            <div className="flex  gap-3">
                 {
                     faqs.map(({id,question,answer}) => {
                         return(

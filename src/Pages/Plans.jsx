@@ -10,24 +10,25 @@ const Plans = () => {
       savdkjbaoinsvbqebuvanebo
     </Header>
     <section>
-      <div>
+      <div className='flex gap-6 m-10'>
         {
           plans.map(({id, name ,desc,features}) => {
             return (
               <Card key={id}>
-                <h1>{name}</h1>
+                <h1 className='text-center text-white'>{name}</h1>
                 <small>{desc}</small>
                 {/* <h1>{'$${price}'}</h1> */}
                 <h4>Features</h4><h2>/mo</h2>
                 {
-                  features.map(({feature},index) => {
+                  features.map(({feature,available},index) => {
                     return (
-                      <p key = {index}>{feature}</p>
+                      <p key = {index} className ={!available ? 'disabled' : ''}>{feature}</p>
+
                     )
                   })
                 }
 
-                <button> Choose Plan</button>
+                <button className='rounded-full bg-neutral-100 p-2'> Choose Plan</button>
 
               </Card>
             )

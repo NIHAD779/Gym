@@ -11,7 +11,7 @@ const Contact = () => {
       kwjehbriuofqeiugbqeirubgquibgruqebugiqboiubgryuqefiqirubiqjebg
     </Header>
     <section>
-      <div>
+      <div className='flex justify-center m-10 gap-11'>
         <a href='www.gmail.com'><MdEmail/></a>
         <a href='www.facebook.com'><BsMessenger/></a>
         <a href='www.whatsapp.com'><IoLogoWhatsapp/></a>

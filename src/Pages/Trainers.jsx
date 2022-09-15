@@ -15,7 +15,7 @@ const Trainers = () => {
       akwjvblibeoiuqbewiugbqwoebnojqweboiqenboje
     </Header>
     <section>
-      <div>
+      <div  className='grid grid-cols-3 gap-10 m-4'>
         {
           trainers.map(({id,image,name,job,socials}) => {
             return(
@@ -28,7 +28,7 @@ const Trainers = () => {
                 {icon : <FaLinkedin/> , link : socials[3]}
 
               ]
-            }/>
+            } />
             )
 
             

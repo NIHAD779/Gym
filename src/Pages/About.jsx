@@ -10,20 +10,20 @@ const About = () => {
     <Header title = "About Us" image = {Headerimg}>
       ajf jawbionawguawi
     </Header>
-    <section>
-      <div>
-        <img src={storyimg} alt="story" />
+    <section className='flex m-5 p-4'>
+      <div className='basis-1/2'>
+        <img src={storyimg} alt="story" className='rounded-full' />
       </div>
-      <div>
+      <div className='basis-1/2 text-center' >
         <h1>Our Story</h1>
         <p>vashveoiubvwhuwefwebbfwifjewvbqwenfijbfaskjbvh</p>
       </div>
     </section>
-    <section>
+    <section className='flex m-5 p-4'>
       <div>
-        <img src={Visionimg} alt="vision" />
+        <img src={Visionimg} alt="vision" className='rounded-full'/>
       </div>
-      <div>
+      <div className='basis-1/2 text-center'>
         <h1>Our Vision</h1>
         <p>aehjgbfiewbgoiuwehgpuqiebgouiwebhgiuwehr</p>
       </div>

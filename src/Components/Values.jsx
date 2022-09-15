@@ -6,16 +6,16 @@ import Card from '../UI Components/Card'
 const Values = () => {
   return (
     <section>
-        <div className='flex'>
+        <div className='flex justify-between px-10 gap-4'>
             <div className="left">
-                <img src={value_img} alt="" />
+                <img src={value_img} alt=""  className='rounded'/>
             </div>
             <div className="right">
                 <Sectionhead title="Values"/>
                 <p>
                     bjsvjnwoigneroignwijegbowengibsegjnes
                 </p>
-                <div className="val_wrap">
+                <div className="val_wrap flex flex-col gap-6">
                     {
                         values.map(({id,icon,title,desc}) => {
                             return <Card >
